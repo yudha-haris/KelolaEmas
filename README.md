@@ -7,7 +7,7 @@
 This project follows the **Clean Architecture** pattern and uses **GetX** for state management and routing.
 
 ## 📁 Project Structure
-
+```
 lib/
 ├── common/                 # Shared UI styles and components
 │ └── ui/
@@ -41,3 +41,4 @@ lib/
 │ ├── screens/              # UI screens
 │ ├── bindings/             # GetX bindings for dependency injection
 │ └── widgets/              # Feature-specific widgets
+```
