@@ -11,37 +11,36 @@ import 'package:kelola_emas/features/main/presentation/home/widgets/transaction_
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
+  static const route = '/home';
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.background,
-      body: ListView(
-        padding: EdgeInsets.symmetric(
-          horizontal: AppSize.s16,
-          vertical: AppSize.s24,
-        ),
-        children: [
-          Text('Halo, Yudha!', style: PrimaryTextStyle.heading20SemiBold()),
-          32.h,
-          SummaryCardWidget(),
-          24.h,
-          Row(
-            children: [
-              Expanded(
-                child: AppButton.primary(label: 'Tambah Emas', onTap: () {}),
-              ),
-              8.w,
-              Expanded(
-                child: AppButton.secondary(label: 'Hapus Emas', onTap: () {}),
-              ),
-            ],
-          ),
-          24.h,
-          const TodayPriceWidget(),
-          24.h,
-          const TransactionHistoryWidget(),
-        ],
+    return ListView(
+      padding: EdgeInsets.symmetric(
+        horizontal: AppSize.s16,
+        vertical: AppSize.s24,
       ),
+      children: [
+        Text('Halo, Yudha!', style: PrimaryTextStyle.heading20SemiBold()),
+        32.h,
+        SummaryCardWidget(),
+        24.h,
+        Row(
+          children: [
+            Expanded(
+              child: AppButton.primary(label: 'Tambah Emas', onTap: () {}),
+            ),
+            8.w,
+            Expanded(
+              child: AppButton.secondary(label: 'Hapus Emas', onTap: () {}),
+            ),
+          ],
+        ),
+        24.h,
+        const TodayPriceWidget(),
+        24.h,
+        const TransactionHistoryWidget(),
+      ],
     );
   }
 }

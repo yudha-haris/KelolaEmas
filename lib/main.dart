@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:kelola_emas/config/routes/app_routes.dart';
 
 import 'features/main//presentation/home/screens/home_page.dart';
+import 'features/main/presentation/main/pages/main_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(GetMaterialApp(
+    initialRoute: MainPage.route,
+    defaultTransition: Transition.rightToLeft,
+    getPages: AppRoutes.getPages,
+  ));
 }
 
 class MyApp extends StatelessWidget {
