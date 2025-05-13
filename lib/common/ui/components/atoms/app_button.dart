@@ -42,7 +42,7 @@ class AppButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(AppSize.s8),
         ),
       ),
-      onPressed: () {},
+      onPressed: onTap,
       child: Text(
         label,
         style: PrimaryTextStyle.body16Medium(color: AppColors.white),

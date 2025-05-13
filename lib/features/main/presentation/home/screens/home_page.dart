@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:kelola_emas/common/ui/colors/app_colors.dart';
-import 'package:kelola_emas/common/ui/components/atoms/app_button.dart';
+import 'package:get/get.dart';
 import 'package:kelola_emas/common/ui/components/components.dart';
 import 'package:kelola_emas/common/ui/sizing/app_size.dart';
 import 'package:kelola_emas/common/ui/typography/primary_text_style.dart';
 import 'package:kelola_emas/features/main/presentation/home/widgets/summary_card_widget.dart';
 import 'package:kelola_emas/features/main/presentation/home/widgets/today_price_widget.dart';
 import 'package:kelola_emas/features/main/presentation/home/widgets/transaction_history_widget.dart';
+import 'package:kelola_emas/features/savings/presentation/add/add_saving_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -28,7 +28,12 @@ class HomePage extends StatelessWidget {
         Row(
           children: [
             Expanded(
-              child: AppButton.primary(label: 'Tambah Emas', onTap: () {}),
+              child: AppButton.primary(
+                label: 'Tambah Emas',
+                onTap: () {
+                  Get.toNamed(AddSavingPage.route);
+                },
+              ),
             ),
             8.w,
             Expanded(

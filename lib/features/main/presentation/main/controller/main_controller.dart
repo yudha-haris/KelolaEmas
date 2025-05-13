@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kelola_emas/features/main/presentation/home/screens/home_page.dart';
-import 'package:kelola_emas/features/main/presentation/savings/screens/saving_page.dart';
+import 'package:kelola_emas/features/main/presentation/savings/pages/saving_page.dart';
 
 class MainController extends GetxController {
   RxInt currentIndex = 0.obs;

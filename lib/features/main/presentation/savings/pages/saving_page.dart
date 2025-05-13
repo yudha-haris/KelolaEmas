@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:kelola_emas/common/ui/components/atoms/primary_card.dart';
 import 'package:kelola_emas/common/ui/components/components.dart';
 import 'package:kelola_emas/common/ui/sizing/app_size.dart';
 import 'package:kelola_emas/common/ui/typography/primary_text_style.dart';
+import 'package:kelola_emas/features/savings/presentation/add/add_saving_page.dart';
 
 class SavingPage extends StatelessWidget {
   const SavingPage({super.key});
@@ -36,7 +38,9 @@ class SavingPage extends StatelessWidget {
           Row(
             children: [
               Expanded(
-                child: AppButton.primary(label: 'Tambah Emas', onTap: () {}),
+                child: AppButton.primary(label: 'Tambah Emas', onTap: () {
+                  Get.toNamed(AddSavingPage.route);
+                }),
               ),
               8.w,
               Expanded(
