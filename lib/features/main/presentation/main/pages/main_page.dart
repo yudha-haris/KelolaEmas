@@ -12,10 +12,12 @@ class MainPage extends GetView<MainController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: PageView(
-        allowImplicitScrolling: false,
-        controller: controller.pageController,
-        children: [HomePage(), SavingPage()],
+      body: SafeArea(
+        child: PageView(
+          allowImplicitScrolling: false,
+          controller: controller.pageController,
+          children: [HomePage(), SavingPage()],
+        ),
       ),
       bottomNavigationBar: Obx(() {
         return BottomNavigationBar(

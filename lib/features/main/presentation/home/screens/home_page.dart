@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
       ),
       children: [
         Text('Halo, Yudha!', style: PrimaryTextStyle.heading20SemiBold()),
-        32.h,
+        24.h,
         SummaryCardWidget(),
         24.h,
         Row(
@@ -32,7 +32,7 @@ class HomePage extends StatelessWidget {
             ),
             8.w,
             Expanded(
-              child: AppButton.secondary(label: 'Hapus Emas', onTap: () {}),
+              child: AppButton.secondary(label: 'Kurangi Emas', onTap: () {}),
             ),
           ],
         ),
